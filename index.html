@@ -1,6 +1,4 @@
 
-
-```
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,6 +6,12 @@
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font-family: Arial; background: #fff0f5; color: #333; text-align: center; }
+      nav { background: #880e4f; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+      nav h2 { color: white; font-size: 20px; }
+      .menu-btn { background: none; border: 2px solid white; color: white; padding: 8px 15px; border-radius: 20px; font-size: 14px; cursor: pointer; }
+      .menu { display: none; background: #880e4f; padding: 10px; }
+      .menu a { display: block; color: white; padding: 10px; text-decoration: none; font-size: 16px; border-bottom: 1px solid #c2185b; }
+      .menu.open { display: block; }
       .header { background: linear-gradient(135deg, #c2185b, #e91e8c); padding: 50px 20px; color: white; }
       .header h1 { font-size: 40px; }
       .header p { font-size: 18px; margin-top: 8px; }
@@ -23,15 +27,24 @@
     </style>
   </head>
   <body>
+    <nav>
+      <h2>✨ Shalini Giri</h2>
+      <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    </nav>
+    <div class="menu" id="myMenu">
+      <a href="#about">About Me</a>
+      <a href="#skills">My Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
     <div class="header">
       <h1>✨ Shalini Giri</h1>
       <p>Web Developer & Creative Designer</p>
     </div>
-    <div class="section about">
+    <div class="section about" id="about">
       <h2>About Me</h2>
       <p>Hi, I'm Shalini Giri — a passionate Freelancer and Creative Designer. I have hands-on experience in Logo Design, Photo Editing, and Social Media Management. With my background as a Beautician and Makeup Artist, I bring a unique sense of style, beauty, and aesthetics to every creative project I work on. I am dedicated, detail-oriented, and always give my 100% to deliver the best results! 💼✨</p>
     </div>
-    <div class="section">
+    <div class="section" id="skills">
       <h2>My Skills</h2>
       <div class="skills-grid">
         <div class="skill-card">🎨 Logo Design</div>
@@ -44,7 +57,7 @@
         <div class="skill-card">💅 Beautician</div>
       </div>
     </div>
-    <div class="section">
+    <div class="section" id="contact">
       <h2>Contact Me</h2>
       <div class="contact-box">
         <div class="contact-item">📞 <span>Phone:</span> 8910116629</div>
@@ -55,5 +68,12 @@
     <div class="footer">
       <p>© 2025 Shalini Giri | All Rights Reserved</p>
     </div>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("myMenu");
+        menu.classList.toggle("open");
+      }
+    </script>
   </body>
 </html>
+
