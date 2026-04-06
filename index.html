@@ -15,6 +15,7 @@
       .header { background: linear-gradient(135deg, #c2185b, #e91e8c); padding: 50px 20px; color: white; }
       .header h1 { font-size: 40px; }
       .header p { font-size: 18px; margin-top: 8px; }
+      .wa-btn { display: inline-block; background: #25D366; color: white; padding: 12px 25px; border-radius: 30px; font-size: 16px; font-weight: bold; text-decoration: none; margin-top: 20px; }
       .section { padding: 30px 20px; }
       .section h2 { color: #c2185b; font-size: 24px; margin-bottom: 15px; }
       .about p { font-size: 16px; line-height: 1.7; max-width: 400px; margin: auto; }
@@ -24,6 +25,7 @@
       .contact-item { margin: 12px 0; font-size: 15px; }
       .contact-item span { color: #c2185b; font-weight: bold; }
       .footer { background: #c2185b; color: white; padding: 20px; margin-top: 30px; font-size: 14px; }
+      .wa-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; border-radius: 50px; padding: 12px 20px; font-size: 16px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; }
     </style>
   </head>
   <body>
@@ -39,6 +41,7 @@
     <div class="header">
       <h1>✨ Shalini Giri</h1>
       <p>Web Developer & Creative Designer</p>
+      <a href="https://wa.me/918910116629" class="wa-btn">💬 WhatsApp Me</a>
     </div>
     <div class="section about" id="about">
       <h2>About Me</h2>
@@ -68,8 +71,9 @@
     <div class="footer">
       <p>© 2025 Shalini Giri | All Rights Reserved</p>
     </div>
+    <a href="https://wa.me/918910116629" class="wa-float">💬 WhatsApp</a>
     <script>
-      function toggleMenu() {
+      function toggleMenu( {
         var menu = document.getElementById("myMenu");
         menu.classList.toggle("open");
       }
