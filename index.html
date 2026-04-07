@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shalini Giri</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: Arial; background: #fff0f5; color: #333; text-align: center; }
+      nav { background: #880e4f; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+      nav h2 { color: white; font-size: 20px; }
+      .menu-btn { background: none; border: 2px solid white; color: white; padding: 8px 15px; border-radius: 20px; font-size: 14px; cursor: pointer; }
+      .menu { display: none; background: #880e4f; padding: 10px; }
+      .menu a { display: block; color: white; padding: 10px; text-decoration: none; font-size: 16px; border-bottom: 1px solid #c2185b; }
+      .menu.open { display: block; }
+      .header { background: linear-gradient(135deg, #c2185b, #e91e8c); padding: 50px 20px; color: white; animation: fadeIn 1.5s ease; }
+      .header h1 { font-size: 40px; }
+      .header p { font-size: 18px; margin-top: 8px; }
+      .wa-btn { display: inline-block; background: #25D366; color: white; padding: 12px 25px; border-radius: 30px; font-size: 16px; font-weight: bold; text-decoration: none; margin-top: 20px; }
+      .section { padding: 30px 20px; animation: slideUp 1s ease; }
+      .section h2 { color: #c2185b; font-size: 24px; margin-bottom: 15px; }
+      .about p { font-size: 16px; line-height: 1.7; max-width: 400px; margin: auto; }
+      .skills-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 15px; }
+      .skill-card { background: white; border: 2px solid #c2185b; border-radius: 15px; padding: 12px 20px; font-size: 14px; color: #c2185b; font-weight: bold; transition: transform 0.3s; }
+      .skill-card:hover { transform: scale(1.1); }
+      .contact-box { background: white; border-radius: 20px; padding: 25px; max-width: 350px; margin: auto; box-shadow: 0 4px 15px rgba(194,24,91,0.15); }
+      .contact-item { margin: 12px 0; font-size: 15px; }
+      .contact-item span { color: #c2185b; font-weight: bold; }
+      .footer { background: #c2185b; color: white; padding: 20px; margin-top: 30px; font-size: 14px; }
+      .wa-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; border-radius: 50px; padding: 12px 20px; font-size: 16px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; }
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h2>✨ Shalini Giri</h2>
+      <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    </nav>
+    <div class="menu" id="myMenu">
+      <a href="#about">About Me</a>
+      <a href="#skills">My Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="header">
+      <h1>✨ Shalini Giri</h1>
+      <p>Web Developer & Creative Designer</p>
+      <a href="https://wa.me/918910116629" class="wa-btn">💬 WhatsApp Me</a>
+    </div>
+    <div class="section about" id="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Shalini Giri — a passionate Freelancer and Creative Designer. I have hands-on experience in Logo Design, Photo Editing, and Social Media Management. With my background as a Beautician and Makeup Artist, I bring a unique sense of style, beauty, and aesthetics to every creative project I work on. I am dedicated, detail-oriented, and always give my 100% to deliver the best results! 💼✨</p>
+    </div>
+    <div class="section" id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">🎨 Logo Design</div>
+        <div class="skill-card">📸 Photo Editing</div>
+        <div class="skill-card">📱 Social Media</div>
+        <div class="skill-card">💻 HTML & CSS</div>
+        <div class="skill-card">🌐 Web Design</div>
+        <div class="skill-card">✍️ Content Writing</div>
+        <div class="skill-card">💄 Makeup Artist</div>
+        <div class="skill-card">💅 Beautician</div>
+      </div>
+    </div>
+    <div class="section" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-box">
+        <div class="contact-item">📞 <span>Phone:</span> 8910116629</div>
+        <div class="contact-item">📧 <span>Email:</span> Imshalini.official@gmail.com</div>
+        <div class="contact-item">📍 <span>Location:</span> India</div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>© 2025 Shalini Giri | All Rights Reserved</p>
+    </div>
+    <a href="https://wa.me
